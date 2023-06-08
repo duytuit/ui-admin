@@ -10,7 +10,7 @@
     "build:stage": "vue-cli-service build --mode staging",
     "preview": "node build/index.js --preview",
     "lint": "eslint --ext .js,.vue src",
-    "pm2": "pm2 start --name ui-admin -- vue-cli-service serve -- -p 8092"
+    "pm2": "pm2 start --name ui-admin vue-cli-service serve -p 8092"
   },
   "husky": {
     "hooks": {
