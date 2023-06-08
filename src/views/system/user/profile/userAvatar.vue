@@ -27,7 +27,7 @@
         <el-col :lg="2" :md="2">
           <el-upload action="#" :http-request="requestUpload" :show-file-list="false" :before-upload="beforeUpload">
             <el-button size="small">
-              选择
+              chọn
               <i class="el-icon-upload el-icon--right"></i>
             </el-button>
           </el-upload>
@@ -45,7 +45,7 @@
           <el-button icon="el-icon-refresh-right" size="small" @click="rotateRight()"></el-button>
         </el-col>
         <el-col :lg="{span: 2, offset: 6}" :md="2">
-          <el-button type="primary" size="small" @click="uploadImg()">提 交</el-button>
+          <el-button type="primary" size="small" @click="uploadImg()">Cập nhật</el-button>
         </el-col>
       </el-row>
     </el-dialog>
@@ -71,7 +71,7 @@ export default {
       // 是否显示cropper
       visible: false,
       // 弹出层标题
-      title: "Sửa头像",
+      title: "Sửa hình đại diện",
       options: {
         img: store.getters.avatar, //裁剪图片的地址
         autoCrop: true, // 是否默认生成截图框
